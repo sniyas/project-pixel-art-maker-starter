@@ -1,14 +1,15 @@
 let selectedColor = document.getElementById("colorPicker");
 let sizePicker = document.getElementById("sizePicker");
 let canvasTable = document.getElementById("pixelCanvas");
-let height = document.getElementById("inputHeight").value;
-let width = document.getElementById("inputWidth").value;
 let submitBtn = document.getElementById("submitBtn");
 
 
 
 function makeGrid() { //Function to create the grid pattern according to the user input
 
+    let height = document.getElementById("inputHeight").value;
+    let width = document.getElementById("inputWidth").value;
+    
     if (canvasTable.firstElementChild) {
 
         canvasTable.firstElementChild.remove(); //To clear the existing grid if any
